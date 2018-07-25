@@ -1,0 +1,9 @@
+.dialog{border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;}
+.dialog .body{border-bottom-left-radius: 7px;border-bottom-right-radius: 7px;}
+.dialog .header{background:#CFACD0;border-bottom: 2px solid #8D3A91;border-top-left-radius: 4px;border-top-right-radius: 4px;}
+.dialog .header h2{color: #8D3A91;text-indent: 17px;}
+.dialog .header s{background:#CFACD0 url(close-btn-1.png) no-repeat center center;right: 10px;}
+.dialog .footer{background: rgba(207, 172, 208, 0.45);border-top: 1px solid #CFACD0;}
+.dialog .footer .buttons button{height:30px;line-height:30px;font-size:16px;border-radius: 3px;margin-left:10px;min-width:100px;border:none;color:#fff;font-size:14px;cursor:pointer;}
+.dialog .footer .buttons button.confirm{background:#8D3A91;}
+.dialog .footer .buttons button.cannel{background: #666;border: 1px solid #666666;}

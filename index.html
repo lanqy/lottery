@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>幸运大转盘</title>
+    <link rel="stylesheet" href="js/dialog/dialog.css?v=201701161207" />
+    <link rel="stylesheet" href="css/luckyDrawNew.css?v=201701161207" />
+    <style>
+        .d-holder .dialog,
+        .window-holder .dialog,
+        .w-holder .dialog,
+        .over-holder .dialog,
+        .d-holder .dialog .body,
+        .w-holder .dialog .body,
+        .window-holder .dialog .body,
+        .over-holder .dialog .body,
+        .win-holder .dialog .body,
+        .win-holder .dialog,
+        .dialog .lay {
+            background: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="activity_main" class="box">
+        <div class="lotteryNew" style="padding-top:0;">
+            <div class="block-step-1 step01-1">
+                <div class="step-mod-dil block-step-1-content">
+                    <div class="group-box">
+                        <!-- 大转盘与获奖 -->
+                        <div class="group-prize">
+                            <div class="group-draw">
+                                <div class="rotate_bg">
+                                    <!-- 转动盘 -->
+                                    <img src="images/draw-14-3.png?v=201706021748" id="rotate" class="rotate rotate-animate">
+
+                                    <!-- 转动触发按钮 -->
+                                    <a href="javascirpt:void(0)" id="pointer" class="pointer img_box">
+                                        <img src="images/pointer_c-2.png?v=201706021748" class="pointer">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="d-holder" style="display:none;"></div>
+    <div class="window-holder" style="display:none;"></div>
+    <div class="error-holder" style="display:none;"></div>
+
+<script type="text/template" id="time-over-tpl2">
+<div class="lotteryNew-dialog dialog01">
+   <div class="pop-dialog">
+      <a class="close"></a>
+      <div class="coupon-box">
+          <h1>中奖提示</h1>
+          <dl class="coupon-box-text text02">
+              <dt>尊敬的用户：</dt>
+              <dd>您好！恭喜您抽中<span>$awardName</span>。</dd>
+          </dl>
+           <ul>
+                  <li>
+                      <a href="javascript:void(0)" class="close modal-btn btn01"> 确定</a>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0)" class="modal-btn btn02 confirm tw" id="confirm-btn"> 再抽一次</a>
+                  </li>
+          </ul>
+      </div>
+   </div>
+</div>
+</script>
+
+<script type="text/template" id="time-over-tpl3">
+<div class="lotteryNew-dialog dialog01">
+   <div class="pop-dialog">
+      <a class="close"></a>
+      <div class="coupon-box">
+          <h1>中奖提示</h1>
+          <dl class="coupon-box-text text02">
+              <dt>尊敬的用户：</dt>
+              <dd>很遗憾，您未中奖！感谢您参与抽奖活动。</dd>
+          </dl>
+           <ul>
+                  <li>
+                      <a href="javascript:void(0)" class="close modal-btn btn01"> 确定</a>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0)" class="modal-btn btn02 confirm tw" id="confirm-btn01"> 再抽一次</a>
+                  </li>
+          </ul>
+      </div>
+   </div>
+</div>
+</script>
+
+<!-- 弹出窗 Modal-->
+<script type="text/template" id="text-tpl">
+<div class="lotteryNew-dialog dialog02">
+   <div class="pop-dialog">
+      <a class="close"></a>
+      <div class="coupon-box">
+          <h1>中奖提示</h1>
+          <dl class="coupon-box-text">
+              <dt>尊敬的用户：</dt>
+              <dd>您好，$text</dd>
+          </dl>
+      </div>
+   </div>
+</div>
+</script>
+
+    <style>
+        .d-holder .dialog,
+        .window-holder .dialog,
+        .w-holder .dialog,
+        .over-holder .dialog,
+        .d-holder .dialog .body,
+        .w-holder .dialog .body,
+        .window-holder .dialog .body,
+        .over-holder .dialog .body,
+        .win-holder .dialog .body,
+        .win-holder .dialog,
+        .dialog .lay {
+            background: none;
+        }
+    </style>
+
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/dialog/dialog.js"></script>
+    <script src="js/awardRotate.js"></script>
+    <script src="js/lottery.js?v=201706081636"></script>
+    </div>
+</body>
+
+</html>

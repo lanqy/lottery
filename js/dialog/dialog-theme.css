@@ -1,0 +1,5 @@
+.dialog .header{background: #efa15c;}
+.dialog .header s{background:#efa15c url(close-btn.png) no-repeat center center;}
+.dialog .footer{background: #ffebda;border-top: 1px solid #f1bc8d;}
+.dialog .footer .buttons button.confirm{background: #ff9434;}
+.dialog .footer .buttons button.cannel{background: #f1c29a;border: 1px solid #efae74;}
